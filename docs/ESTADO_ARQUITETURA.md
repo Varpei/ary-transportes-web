@@ -54,3 +54,4 @@ As decisões devem permanecer compatíveis com HTML5 semântico, Tailwind CSS vi
 - ISSUE-04: CONCLUÍDO — protótipo completo, estilos, frota, filtros e lightbox.
 - ISSUE-05: CONCLUÍDO — motor WhatsApp, rastreamento de conversões e formulário.
 - ISSUE-06: CONCLUÍDO — servidor blindado Codespaces e sincronização GitHub.
+- ISSUE-07: CONCLUÍDO — servidor híbrido, blueprint Render, base RAG unificada e pipeline zero-touch.
