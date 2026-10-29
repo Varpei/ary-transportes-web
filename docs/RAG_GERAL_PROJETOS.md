@@ -25,6 +25,8 @@
 - ISSUE-05: WhatsApp, tracking e JSON-LD.
 - ISSUE-06: servidor Codespaces/cloud e sincronização.
 - ISSUE-07: RAG, blueprint cloud e automação de deploy.
+- ISSUE-11: classificação visual determinística e mapa semântico das fotos.
+- ISSUE-12: preview público e sincronização da apresentação.
 
 ## Regras de continuidade
 

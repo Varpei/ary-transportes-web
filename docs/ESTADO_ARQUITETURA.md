@@ -58,6 +58,8 @@ As decisões devem permanecer compatíveis com HTML5 semântico, Tailwind CSS vi
 - ISSUE-08: CONCLUÍDO — auditoria zero-trust, checklist de arquivos, mídia, segurança, Git e servidor.
 - ISSUE-09: CONCLUÍDO — mapeamento semântico determinístico, crop de logos e blur de regiões sensíveis.
 - ISSUE-10: CONCLUÍDO — processamento dos slots reais e preparação do acesso público via servidor configurável.
+- ISSUE-11: CONCLUÍDO — classificação visual inteligente das 14 fotos 20.56, crop e blur de privacidade.
+- ISSUE-12: CONCLUÍDO — preparação e verificação dos links públicos de apresentação.
 
 ## Última auditoria
 
