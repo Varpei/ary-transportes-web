@@ -1,0 +1,16 @@
+{
+  "name": "ARY Transportes - Hardened Codespaces",
+  "image": "[mcr.microsoft.com/devcontainers/python:3.11](https://mcr.microsoft.com/devcontainers/python:3.11)",
+  "forwardPorts": [
+    8080
+  ],
+  "portsAttributes": {
+    "8080": {
+      "label": "ARY Transportes - Protótipo Seguro",
+      "onAutoForward": "openPreview",
+      "visibility": "public"
+    }
+  },
+  "postCreateCommand": "pip install -r requirements.txt && python3 scripts/process_media.py",
+  "postAttachCommand": "nohup python3 app_codespaces.py > /tmp/ary_server.log 2>&1 & ( [ -n \"$CODESPACE_NAME\" ] && gh codespace ports visibility 8080:public -c \"$CODESPACE_NAME\" || true )"
+}
