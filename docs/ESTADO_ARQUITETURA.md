@@ -56,6 +56,8 @@ As decisões devem permanecer compatíveis com HTML5 semântico, Tailwind CSS vi
 - ISSUE-06: CONCLUÍDO — servidor blindado Codespaces e sincronização GitHub.
 - ISSUE-07: CONCLUÍDO — servidor híbrido, blueprint Render, base RAG unificada e pipeline zero-touch.
 - ISSUE-08: CONCLUÍDO — auditoria zero-trust, checklist de arquivos, mídia, segurança, Git e servidor.
+- ISSUE-09: CONCLUÍDO — mapeamento semântico determinístico, crop de logos e blur de regiões sensíveis.
+- ISSUE-10: CONCLUÍDO — processamento dos slots reais e preparação do acesso público via servidor configurável.
 
 ## Última auditoria
 
