@@ -11,6 +11,22 @@
       });
     }
 
+    var whatsappToggle = document.querySelector('[data-whatsapp-toggle]');
+    var whatsappOptions = document.querySelector('[data-whatsapp-options]');
+    if (whatsappToggle && whatsappOptions) {
+      whatsappToggle.addEventListener('click', function () {
+        var expanded = whatsappToggle.getAttribute('aria-expanded') === 'true';
+        whatsappToggle.setAttribute('aria-expanded', String(!expanded));
+        whatsappOptions.hidden = expanded;
+      });
+      document.addEventListener('click', function (event) {
+        if (!event.target.closest('.whatsapp-contact')) {
+          whatsappToggle.setAttribute('aria-expanded', 'false');
+          whatsappOptions.hidden = true;
+        }
+      });
+    }
+
     var filters = document.querySelectorAll('[data-filter]');
     var cards = document.querySelectorAll('[data-category]');
     filters.forEach(function (button) {

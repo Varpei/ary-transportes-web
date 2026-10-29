@@ -43,7 +43,6 @@
         <a href="#orcamento" class="font-semibold hover:text-ary-primary">Orçamento Rápido</a>
         <a href="https://www.instagram.com/_arytransporte/" target="_blank"
           rel="noopener noreferrer">@_arytransporte</a>
-        <a href="#orcamento" class="rounded-full bg-ary-accent px-5 py-3 font-bold text-ary-primary">WhatsApp</a>
       </nav>
     </div>
   </header>
@@ -68,7 +67,7 @@
       </div>
     </section>
 
-    <section id="servicos" class="mx-auto max-w-7xl px-5 py-20">
+    <section id="servicos" class="light-section mx-auto max-w-7xl px-5 py-20">
       <h2 class="mb-3 text-center text-4xl font-black text-ary-primary">Nossos 3 Pilares de Atendimento</h2>
       <p class="mx-auto mb-10 max-w-2xl text-center text-slate-600">Soluções reais para pessoas, empresas, escolas e
         grupos.</p>
@@ -94,7 +93,7 @@
       </div>
     </section>
 
-    <section id="frota" class="bg-white px-5 py-20">
+    <section id="frota" class="light-section bg-white px-5 py-20">
       <div class="mx-auto max-w-7xl">
         <h2 class="mb-8 text-4xl font-black text-ary-primary">Nossa Frota Real e Equipada</h2>
         <div class="mb-8 flex flex-wrap gap-3">
@@ -161,7 +160,7 @@
         confortável do embarque ao destino.</p>
     </section>
 
-    <section id="orcamento" class="mx-auto max-w-3xl px-5 py-20">
+    <section id="orcamento" class="light-section mx-auto max-w-3xl px-5 py-20">
       <h2 class="mb-3 text-4xl font-black text-ary-primary">Simulador de Orçamento Rápido via WhatsApp</h2>
       <form id="form-orcamento-ary" class="grid gap-4 rounded-3xl bg-white p-6 shadow-xl">
         <label>Modalidade<select id="servico" name="servico" required class="mt-1 w-full rounded-lg border p-3">
@@ -201,8 +200,15 @@
     <p class="mx-auto mt-6 max-w-7xl text-sm text-slate-300">© <span data-current-year></span> ARY Transportes e Viagens
     </p>
   </footer>
-  <a href="#orcamento" aria-label="Solicitar orçamento no WhatsApp"
-    class="whatsapp-float fixed bottom-6 right-6 z-30 rounded-full bg-ary-accent px-5 py-4 font-black text-ary-primary">WhatsApp</a>
+  <div class="whatsapp-contact fixed bottom-6 right-6 z-30">
+    <div id="whatsapp-options" class="whatsapp-options" data-whatsapp-options hidden>
+      <a href="https://wa.me/5563992935934" target="_blank" rel="noopener noreferrer">Unidade 1<br><small>(63) 99293-5934</small></a>
+      <a href="https://wa.me/5563992930031" target="_blank" rel="noopener noreferrer">Unidade 2<br><small>(63) 99293-0031</small></a>
+    </div>
+    <button type="button" class="whatsapp-float" data-whatsapp-toggle aria-expanded="false" aria-controls="whatsapp-options">
+      WhatsApp
+    </button>
+  </div>
   <!--<div data-lightbox hidden class="modal-backdrop fixed inset-0 z-50 grid place-items-center p-5"><button data-lightbox-close class="absolute right-6 top-5 text-3xl text-white" aria-label="Fechar">×</button><img src="" alt="" class="max-h-[85vh] max-w-full rounded-2xl"></div>-->
   <script src="assets/js/security.js"></script>
   <script src="assets/js/app.js"></script>
