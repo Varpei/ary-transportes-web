@@ -8,7 +8,14 @@
 
 html { scroll-behavior: smooth; }
 body { background: var(--ary-light); color: #17323a; }
-.site-header { background: rgba(248, 250, 252, .9); backdrop-filter: blur(14px); }
+.site-header { background: rgba(248, 250, 252, .96); backdrop-filter: blur(14px); }
+.site-header nav a { color: var(--ary-primary-dark); }
+.site-header nav a:hover { color: var(--ary-accent-hover); }
+.brand-logo { display: block; min-height: 4rem; max-height: 4.5rem; object-fit: contain; }
+.hero-section { background: var(--ary-primary); color: var(--ary-light); }
+.hero-eyebrow { color: var(--ary-accent); }
+.hero-title { color: #FFFFFF; text-shadow: 0 2px 3px rgba(15, 45, 55, .28); }
+.hero-description { color: #E8F0F2; }
 .fleet-card { transition: transform .25s ease, box-shadow .25s ease; }
 .fleet-card:hover { transform: translateY(-5px); box-shadow: 0 18px 40px rgba(15, 45, 55, .16); }
 .whatsapp-float { box-shadow: 0 10px 24px rgba(140, 198, 63, .35); }
@@ -19,5 +26,6 @@ body { background: var(--ary-light); color: #17323a; }
 @keyframes pulse { 0%, 100% { opacity: .8; transform: scale(1); } 50% { opacity: 0; transform: scale(1.18); } }
 @media (max-width: 767px) {
   .site-header nav.is-open { display: flex; }
+  .brand-logo { min-height: 3.25rem; max-height: 3.75rem; }
   .hero-title { font-size: 2.45rem; line-height: 1.05; }
 }
