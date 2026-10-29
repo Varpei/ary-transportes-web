@@ -55,3 +55,10 @@ As decisões devem permanecer compatíveis com HTML5 semântico, Tailwind CSS vi
 - ISSUE-05: CONCLUÍDO — motor WhatsApp, rastreamento de conversões e formulário.
 - ISSUE-06: CONCLUÍDO — servidor blindado Codespaces e sincronização GitHub.
 - ISSUE-07: CONCLUÍDO — servidor híbrido, blueprint Render, base RAG unificada e pipeline zero-touch.
+- ISSUE-08: CONCLUÍDO — auditoria zero-trust, checklist de arquivos, mídia, segurança, Git e servidor.
+
+## Última auditoria
+
+- Data: 2026-10-29
+- Relatório: `docs/AUDITORIA_CHECKLIST.md`
+- Resultado: working tree limpo, `main` sincronizada com `origin/main`, health check aprovado.
