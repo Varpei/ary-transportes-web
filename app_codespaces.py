@@ -52,7 +52,7 @@ class HardenedARYHandler(http.server.SimpleHTTPRequestHandler):
                 {
                     "status": "ok",
                     "project": "ary-transportes-web",
-                    "client": "ARY Transportes e Viagens (Araguaina-TO / Imperatriz-MA)",
+                    "client": "ARY Transportes e Viagens (Todo o Território do Tocantins e Maranhão)",
                     "security": "CSP + HSTS + XFO + NoSniff active",
                     "timestamp": datetime.now(timezone.utc).isoformat(),
                 },

@@ -26,8 +26,7 @@ As decisões devem permanecer compatíveis com HTML5 semântico, Tailwind CSS vi
 ## Dados imutáveis do cliente
 
 - Nome: ARY Transportes e Viagens
-- Cidade base: Araguaína - Tocantins - Brasil
-- Atuação: Aeroporto de Imperatriz - MA e região
+- Abrangência oficial: Todo o Território do Tocantins e Maranhão (TO / MA)
 - WhatsApp 1: `(63) 99293-5934` — `https://wa.me/5563992935934`
 - WhatsApp 2: `(63) 99293-0031` — `https://wa.me/5563992930031`
 - Instagram: `@_arytransporte` — `https://www.instagram.com/_arytransporte/`
@@ -36,8 +35,8 @@ As decisões devem permanecer compatíveis com HTML5 semântico, Tailwind CSS vi
 ### Pilares de serviço
 
 1. Fretamento de vans: viagens, turismo, pousadas, excursões e transporte intermunicipal/interestadual.
-2. Transporte escolar em Araguaína - TO.
-3. Transporte executivo e receptivo de aeroporto em Imperatriz - MA e região.
+2. Transporte escolar com segurança e pontualidade em todo o território do Tocantins e Maranhão.
+3. Transporte executivo e receptivo de aeroportos em todo o território do Tocantins e Maranhão.
 
 ### Frota real mapeada
 
@@ -60,9 +59,20 @@ As decisões devem permanecer compatíveis com HTML5 semântico, Tailwind CSS vi
 - ISSUE-10: CONCLUÍDO — processamento dos slots reais e preparação do acesso público via servidor configurável.
 - ISSUE-11: CONCLUÍDO — classificação visual inteligente das 14 fotos 20.56, crop e blur de privacidade.
 - ISSUE-12: CONCLUÍDO — preparação e verificação dos links públicos de apresentação.
+- ISSUE-13: CONCLUÍDO — adequação da interface ao posicionamento estadual TO/MA.
+- ISSUE-14: CONCLUÍDO — atualização automática da governança e base RAG.
+- ISSUE-13: CONCLUÍDO — adequação da interface ao posicionamento estadual TO/MA.
+- ISSUE-14: CONCLUÍDO — atualização automática da governança e base RAG.
 
 ## Última auditoria
 
-- Data: 2026-10-29
+- Data: 2026-10-30
 - Relatório: `docs/AUDITORIA_CHECKLIST.md`
-- Resultado: working tree limpo, `main` sincronizada com `origin/main`, health check aprovado.
+- Resultado: posicionamento estadual TO/MA aplicado, auditoria zero-cidades aprovada e governança sincronizada.
+
+## Épico 8 (30/10/2026) — Adequação ao Feedback do Sócio (Posicionamento Estadual TO/MA e Foco Executivo/Escolar)
+
+- ISSUE-13: **CONCLUÍDO** — interface sem cidades específicas, com abrangência oficial **Todo o Território do Tocantins e Maranhão (TO / MA)**.
+- ISSUE-14: **CONCLUÍDO** — governança e base RAG atualizadas automaticamente, com foco primário em **Transporte Executivo e Transporte Escolar** e Fretamento de Vans & Viagens.
+- Domínio mantido em `varpei.github.io/ary-transportes-web/` até o fechamento comercial da proposta.
+- Histórico unificado preservado para os projetos ContraGlosa e ARY Transportes.

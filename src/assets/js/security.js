@@ -41,7 +41,7 @@
     var fields = {
       nome: sanitizeText(data.nome || 'Cliente via Site', 60),
       servico: sanitizeText(data.servico || 'Fretamento / Viagem', 60),
-      rota: sanitizeText(data.rota || 'Araguaína - TO', 100),
+      rota: sanitizeText(data.rota || 'Tocantins e Maranhão (TO / MA)', 100),
       data: sanitizeText(data.data || 'A combinar', 40),
       passageiros: sanitizeText(String(data.passageiros || 'Não informado'), 20),
       observacoes: sanitizeText(data.obs || data.observacoes || 'Nenhuma', 160)

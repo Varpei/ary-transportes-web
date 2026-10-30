@@ -16,7 +16,14 @@
 ## Dados imutáveis do cliente
 
 - Nome: ARY Transportes e Viagens
-- Base: Araguaína - Tocantins - Brasil; atuação forte no Aeroporto de Imperatriz - MA e região.
+- Abrangência oficial: Todo o Território do Tocantins e Maranhão (TO / MA).
 - WhatsApps: `(63) 99293-5934` e `(63) 99293-0031`
 - Instagram: `@_arytransporte`
 - Cores: `#1B4956` e `#8CC63F`
+
+## Épico 8 (30/10/2026) — Adequação ao Feedback do Sócio (Posicionamento Estadual TO/MA e Foco Executivo/Escolar)
+
+- ISSUE-13: **CONCLUÍDO** — interface sem cidades específicas, com abrangência oficial **Todo o Território do Tocantins e Maranhão (TO / MA)**.
+- ISSUE-14: **CONCLUÍDO** — governança e base RAG atualizadas automaticamente, com foco primário em **Transporte Executivo e Transporte Escolar** e Fretamento de Vans & Viagens.
+- Domínio mantido em `varpei.github.io/ary-transportes-web/` até o fechamento comercial da proposta.
+- Histórico unificado preservado para os projetos ContraGlosa e ARY Transportes.
