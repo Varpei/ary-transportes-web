@@ -61,14 +61,19 @@ As decisões devem permanecer compatíveis com HTML5 semântico, Tailwind CSS vi
 - ISSUE-12: CONCLUÍDO — preparação e verificação dos links públicos de apresentação.
 - ISSUE-13: CONCLUÍDO — adequação da interface ao posicionamento estadual TO/MA.
 - ISSUE-14: CONCLUÍDO — atualização automática da governança e base RAG.
-- ISSUE-13: CONCLUÍDO — adequação da interface ao posicionamento estadual TO/MA.
-- ISSUE-14: CONCLUÍDO — atualização automática da governança e base RAG.
+- ISSUE-15: CONCLUÍDO — simplificação do H1, remoção do subtítulo repetido e limpeza da navbar.
+- ISSUE-16: CONCLUÍDO — atualização do estado, auditoria e base RAG do Épico 9.
 
 ## Última auditoria
 
 - Data: 2026-10-30
 - Relatório: `docs/AUDITORIA_CHECKLIST.md`
 - Resultado: posicionamento estadual TO/MA aplicado, auditoria zero-cidades aprovada e governança sincronizada.
+
+## Épico 9 (30/10/2026) — Limpeza Cirúrgica do Hero e Navbar
+
+- ISSUE-15: **CONCLUÍDO** — H1 sem localidade, subtítulo redundante removido e item `Diferenciais` retirado da navbar.
+- ISSUE-16: **CONCLUÍDO** — estado da arquitetura, auditoria e base RAG atualizados.
 
 ## Épico 8 (30/10/2026) — Adequação ao Feedback do Sócio (Posicionamento Estadual TO/MA e Foco Executivo/Escolar)
 

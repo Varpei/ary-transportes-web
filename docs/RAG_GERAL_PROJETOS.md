@@ -26,6 +26,8 @@
 - ISSUE-07: RAG, blueprint cloud e automação de deploy.
 - ISSUE-11: classificação visual determinística e mapa semântico das fotos.
 - ISSUE-12: preview público e sincronização da apresentação.
+- ISSUE-15: limpeza cirúrgica do Hero e navbar.
+- ISSUE-16: atualização do estado, auditoria e base RAG.
 
 ## Regras de continuidade
 
@@ -37,3 +39,8 @@ Leia `CLAUDE.md`, `.github/copilot-instructions.md` e `docs/ESTADO_ARQUITETURA.m
 - ISSUE-14: **CONCLUÍDO** — governança e base RAG atualizadas automaticamente, com foco primário em **Transporte Executivo e Transporte Escolar** e Fretamento de Vans & Viagens.
 - Domínio mantido em `varpei.github.io/ary-transportes-web/` até o fechamento comercial da proposta.
 - Histórico unificado preservado para os projetos ContraGlosa e ARY Transportes.
+
+## Épico 9 (30/10/2026) — Limpeza Cirúrgica do Hero e Navbar
+
+- ISSUE-15: **CONCLUÍDO** — H1 sem localidade, subtítulo repetido removido e link `Diferenciais` excluído da navbar.
+- ISSUE-16: **CONCLUÍDO** — documentação de estado, auditoria e RAG atualizada.

@@ -11,6 +11,8 @@ Data da auditoria: 2026-10-29
 - [x] ISSUE-05 — formulário, telefones, Instagram e JSON-LD verificados.
 - [x] ISSUE-06 — servidor, requirements e blueprint Render verificados.
 - [x] ISSUE-07 — automação Git/deploy e RAG geral verificados.
+- [x] ISSUE-15 — H1, subtítulo redundante e navbar revisados.
+- [x] ISSUE-16 — estado, auditoria e RAG atualizados.
 
 ## 2. Diagnóstico de mídia
 
@@ -48,3 +50,9 @@ Data da auditoria: 2026-10-29
 - Nenhum bloqueio técnico identificado nesta auditoria.
 - A abertura pública do Codespaces depende do encaminhamento/visibilidade da porta 8080 no ambiente do usuário.
 - A classificação visual final das fotos deve ser feita por revisão humana se a associação semântica de cada slot for necessária.
+
+## 6. Épico 9 — Limpeza Cirúrgica do Hero e Navbar
+
+- H1 da Hero reduzido para `Transporte Executivo, Transporte Escolar e Fretamento de Vans`.
+- Subtítulo redundante removido.
+- Link `Diferenciais` removido da navbar; links de Serviços, Nossa Frota, Orçamento Rápido e Instagram preservados.
