@@ -4,44 +4,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; script-src 'self' https://cdn.tailwindcss.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'">
-  <meta name="description"
-    content="Transporte Executivo, Transporte Escolar e Fretamento de Vans em Todo o Território do Tocantins e Maranhão">
-  <meta name="keywords"
-    content="fretamento de vans Tocantins, transporte escolar Tocantins, transfer Aeroporto Maranhão, ARY Transportes">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.tailwindcss.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self' https://wa.me">
+  <meta name="description" content="ARY Transportes e Viagens: transporte executivo, corporativo, escolar e fretamento de vans.">
   <meta name="theme-color" content="#1B4956">
-  <title>ARY Transportes e Viagens | Transporte Executivo, Escolar e Fretamento no Tocantins e Maranhão</title>
+  <title>ARY Transportes e Viagens | Segurança, conforto e pontualidade</title>
   <script>tailwind = { config: { theme: { extend: { colors: { ary: { primary: '#1B4956', accent: '#8CC63F' } } } } } };</script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["TravelAgency", "LocalBusiness"],
-    "name": "ARY Transportes e Viagens",
-    "url": "https://www.instagram.com/_arytransporte/",
-    "telephone": ["+55-63-99293-5934", "+55-63-99293-0031"],
-    "sameAs": ["https://www.instagram.com/_arytransporte/"],
-    "address": {"@type": "PostalAddress", "addressLocality": "Tocantins e Maranhão", "addressRegion": "TO / MA", "addressCountry": "BR"},
-    "areaServed": [{"@type": "State", "name": "Tocantins"}, {"@type": "State", "name": "Maranhão"}]
-  }
-  </script>
 </head>
 
 <body>
   <header class="site-header fixed inset-x-0 top-0 z-40 border-b border-slate-200">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3">
-      <a href="#" aria-label="ARY Transportes e Viagens"><img src="assets/img/optimized/logo-ary-color.webp"
-        alt="ARY Transportes e Viagens" class="brand-logo h-16 w-auto"></a>
-      <button data-menu-toggle aria-expanded="false" aria-controls="main-nav"
-        class="rounded-lg p-2 text-ary-primary md:hidden" aria-label="Abrir menu">☰</button>
-      <nav id="main-nav" data-mobile-menu class="hidden items-center gap-6 md:flex">
+      <a href="#" aria-label="ARY Transportes e Viagens"><img src="assets/img/optimized/logo-ary-color.webp" alt="ARY Transportes e Viagens" class="brand-logo h-16 w-auto"></a>
+      <button data-menu-toggle aria-expanded="false" aria-controls="main-nav" class="rounded-lg p-2 text-ary-primary md:hidden" aria-label="Abrir menu">☰</button>
+      <nav id="main-nav" data-mobile-menu class="hidden items-center gap-5 md:flex">
+        <a href="#sobre" class="font-semibold hover:text-ary-primary">A Empresa (+20 Anos)</a>
         <a href="#servicos" class="font-semibold hover:text-ary-primary">Serviços</a>
+        <a href="#excursoes" class="font-semibold hover:text-ary-primary">Excursões</a>
         <a href="#frota" class="font-semibold hover:text-ary-primary">Nossa Frota</a>
+        <a href="#homenagem" class="font-semibold hover:text-ary-primary">Legado Sr. Ary</a>
         <a href="#orcamento" class="font-semibold hover:text-ary-primary">Orçamento Rápido</a>
-        <a href="https://www.instagram.com/_arytransporte/" target="_blank"
-          rel="noopener noreferrer">@_arytransporte</a>
+        <a href="https://www.instagram.com/_arytransporte/" target="_blank" rel="noopener noreferrer">Instagram</a>
       </nav>
     </div>
   </header>
@@ -50,171 +34,130 @@
     <section class="hero-section px-5 pb-20 pt-36">
       <div class="mx-auto grid max-w-7xl items-center gap-10 md:grid-cols-2">
         <div>
-          <p class="hero-eyebrow mb-4 font-bold uppercase tracking-widest">Segurança, pontualidade e conforto</p>
-          <h1 class="hero-title mb-6 text-5xl font-black md:text-6xl">Transporte Executivo, Transporte Escolar e Fretamento de Vans</h1>
+          <p class="hero-eyebrow mb-4 font-bold uppercase tracking-widest">Mais de 20 anos de tradição • Atendimento em Araguaína e em todo o território nacional</p>
+          <h1 class="hero-title mb-6 text-5xl font-black md:text-6xl">Transporte Executivo, Corporativo, Escolar e Fretamento de Vans</h1>
+          <p class="hero-description mb-8 max-w-2xl text-lg">Segurança, conforto e pontualidade em cada quilômetro. Levando você ao destino com segurança, conforto e confiança.</p>
           <div class="flex flex-wrap gap-4">
-            <a href="#orcamento" class="rounded-full bg-ary-accent px-6 py-3 font-bold text-ary-primary">Simular
-              orçamento no WhatsApp</a>
-            <a href="#frota" class="rounded-full border border-white px-6 py-3 font-bold">Conhecer a frota real</a>
+            <a href="#orcamento" class="rounded-full bg-ary-accent px-6 py-3 font-bold text-ary-primary">Solicitar orçamento no WhatsApp</a>
+            <a href="#excursoes" class="rounded-full border border-white px-6 py-3 font-bold">Ver excursões e nossa frota</a>
           </div>
         </div>
-        <img src="assets/img/optimized/iveco-daily-ext.webp" alt="Van Executiva Iveco Daily 50-180 branca, 5 estrelas"
-          class="rounded-3xl shadow-2xl">
+        <img src="assets/img/optimized/iveco-daily-ext.webp" alt="Van executiva Iveco Daily 50-180 branca" class="rounded-3xl shadow-2xl">
       </div>
     </section>
 
-    <section id="servicos" class="light-section services-section mx-auto max-w-7xl px-5 py-20">
-      <h2 class="mb-3 text-center text-4xl font-black text-ary-primary">Nossos 3 Pilares de Atendimento</h2>
-      <p class="mx-auto mb-10 max-w-2xl text-center text-slate-600">Soluções reais para pessoas, empresas, escolas e
-        grupos.</p>
-      <div class="grid gap-6 md:grid-cols-3">
-        <article class="rounded-3xl bg-white p-7 shadow-lg">
-          <h3 class="mb-3 text-2xl font-bold text-ary-primary">Transporte Executivo & Receptivo de Aeroportos</h3>
-          <p class="mb-6">Atendimento VIP com Toyota Corolla e vans executivas para compromissos corporativos e receptivos.</p><button data-select-service="Transporte Executivo & Receptivo de Aeroportos"
-            class="rounded-full bg-ary-primary px-5 py-3 font-bold text-white">Solicitar cotação</button>
-        </article>
-        <article class="rounded-3xl bg-white p-7 shadow-lg">
-          <h3 class="mb-3 text-2xl font-bold text-ary-primary">Transporte Escolar</h3>
-          <p class="mb-6">Segurança máxima para crianças e estudantes, pontualidade e veículos climatizados e
-            monitorados.</p><button data-select-service="Transporte Escolar"
-            class="rounded-full bg-ary-primary px-5 py-3 font-bold text-white">Falar com a ARY</button>
-        </article>
-        <article class="rounded-3xl bg-white p-7 shadow-lg">
-          <h3 class="mb-3 text-2xl font-bold text-ary-primary">Fretamento de Vans & Viagens</h3>
-          <p class="mb-6">Turismo, excursões, viagens intermunicipais e interestaduais com frota executiva confortável.</p><button data-select-service="Fretamento de Vans & Viagens (TO e MA)"
-            class="rounded-full bg-ary-primary px-5 py-3 font-bold text-white">Reservar transfer</button>
-        </article>
+    <section id="sobre" class="light-section mx-auto max-w-7xl px-5 py-20">
+      <div class="grid gap-10 md:grid-cols-[1.4fr_1fr]">
+        <div>
+          <h2 class="mb-6 text-4xl font-black text-ary-primary">Apresentação — Mais de 20 Anos de História</h2>
+          <p class="mb-4">Há mais de 20 anos, a <strong>ARY Transportes e Viagens</strong> atua com dedicação, responsabilidade e compromisso, oferecendo serviços de transporte com segurança, conforto e pontualidade. Ao longo dessa trajetória, conquistamos a confiança de clientes, empresas e organizadores de eventos por meio de um atendimento profissional e personalizado.</p>
+          <p class="mb-4">Nossa experiência nos permite atender desde viagens particulares e corporativas até grandes eventos, sempre com foco na excelência e na satisfação de cada passageiro. Atendemos eventos, empresas, aeroportos, hotéis, shows, feiras e viagens particulares. Contamos com veículos bem cuidados e uma equipe preparada para garantir tranquilidade e qualidade em cada trajeto.</p>
+          <p class="mb-6">Na <strong>ARY Transportes</strong>, acreditamos que transportar pessoas vai além de levá-las ao destino: é proporcionar uma experiência segura, confortável e confiável em todos os momentos.</p>
+          <p class="rounded-2xl border-l-4 border-ary-accent bg-white p-5 font-bold text-ary-primary">ARY Transportes — Mais de 20 anos levando você ao seu destino com segurança, conforto e confiança. 🚐✨</p>
+        </div>
+        <div class="rounded-3xl bg-white p-7 shadow-lg">
+          <h3 class="mb-5 text-2xl font-bold text-ary-primary">Nossos diferenciais</h3>
+          <ul class="grid gap-4 font-semibold">
+            <li>✅ Segurança</li><li>✅ Pontualidade</li><li>✅ Atendimento personalizado</li><li>✅ Motoristas experientes</li><li>✅ Veículos confortáveis</li>
+          </ul>
+        </div>
       </div>
+    </section>
+
+    <section id="servicos" class="light-section services-section bg-slate-50 px-5 py-20">
+      <div class="mx-auto max-w-7xl">
+        <h2 class="mb-3 text-center text-4xl font-black text-ary-primary">Nossos Serviços</h2>
+        <p class="mx-auto mb-10 max-w-2xl text-center">Soluções de transporte para empresas, famílias, escolas, artistas e eventos.</p>
+        <div class="grid gap-6 md:grid-cols-4">
+          <article class="service-card rounded-3xl bg-white p-6 shadow-lg"><h3>Transporte Executivo</h3><p>Conforto e pontualidade para compromissos profissionais.</p><button data-select-service="Transporte Executivo">Solicitar cotação</button></article>
+          <article class="service-card rounded-3xl bg-white p-6 shadow-lg"><h3>Traslado para Aeroportos</h3><p>Transfer seguro para aeroportos, hotéis e compromissos.</p><button data-select-service="Traslado para Aeroportos">Solicitar cotação</button></article>
+          <article class="service-card rounded-3xl bg-white p-6 shadow-lg"><h3>Transporte para Eventos</h3><p>Organização e tranquilidade para todos os convidados.</p><button data-select-service="Transporte para Eventos">Solicitar cotação</button></article>
+          <article class="service-card rounded-3xl bg-white p-6 shadow-lg"><h3>Transporte Corporativo</h3><p>Atendimento personalizado para empresas e equipes.</p><button data-select-service="Transporte Corporativo">Solicitar cotação</button></article>
+          <article class="service-card rounded-3xl bg-white p-6 shadow-lg"><h3>Viagens Particulares e Excursões</h3><p>Veículos confortáveis para viagens e passeios em grupo.</p><button data-select-service="Viagens Particulares e Excursões">Solicitar cotação</button></article>
+          <article class="service-card rounded-3xl bg-white p-6 shadow-lg"><h3>Atendimento a Artistas e Equipes de Eventos</h3><p>Logística discreta e eficiente para produções.</p><button data-select-service="Atendimento a Artistas e Equipes de Eventos">Solicitar cotação</button></article>
+          <article class="service-card rounded-3xl bg-white p-6 shadow-lg"><h3>Transporte para Feiras e Exposições</h3><p>Atendimento para feiras, como a Expoara, e exposições.</p><button data-select-service="Transporte para Feiras e Exposições">Solicitar cotação</button></article>
+          <article class="service-card rounded-3xl bg-white p-6 shadow-lg"><h3>Transporte Escolar</h3><p>Segurança e pontualidade para estudantes e escolas.</p><button data-select-service="Transporte Escolar">Solicitar cotação</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="excursoes" class="light-section mx-auto max-w-7xl px-5 py-20">
+      <h2 class="mb-3 text-4xl font-black text-ary-primary">Excursões &amp; Bate e Volta</h2>
+      <p class="mb-10 max-w-2xl">Conheça nossos roteiros e consulte as próximas saídas.</p>
+      <div id="grid-excursoes" class="grid gap-6 md:grid-cols-2" aria-live="polite"></div>
     </section>
 
     <section id="frota" class="light-section bg-white px-5 py-20">
       <div class="mx-auto max-w-7xl">
-        <h2 class="mb-8 text-4xl font-black text-ary-primary">Nossa Frota Real e Equipada</h2>
+        <h2 class="mb-8 text-4xl font-black text-ary-primary">Nossa Frota &amp; Galeria de Trabalhos Realizados</h2>
+        <div class="mb-10 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+          <div class="fleet-pillar">Ar-condicionado</div><div class="fleet-pillar">Bancos confortáveis</div><div class="fleet-pillar">Veículos revisados</div><div class="fleet-pillar">Motoristas qualificados</div>
+        </div>
+        <h3 class="mb-4 text-2xl font-bold text-ary-primary">Destaques de trabalhos realizados</h3>
+        <div class="mb-8 grid gap-4 md:grid-cols-4"><div>Atendimento na Expoara</div><div>Equipes de artistas e shows</div><div>Eventos corporativos</div><div>Clientes atendidos</div></div>
         <div class="mb-8 flex flex-wrap gap-3">
-          <button data-filter="todos" class="filter-button is-active rounded-full border px-5 py-2">Todos</button>
-          <button data-filter="vans" class="filter-button rounded-full border px-5 py-2">Vans Executivas</button>
-          <button data-filter="executivo" class="filter-button rounded-full border px-5 py-2">Sedan Executivo
-            VIP</button>
-          <button data-filter="interior" class="filter-button rounded-full border px-5 py-2">Interior &
-            Conforto</button>
+          <button data-filter="todos" class="filter-button is-active rounded-full border px-5 py-2">Todos</button><button data-filter="vans" class="filter-button rounded-full border px-5 py-2">Vans executivas</button><button data-filter="executivo" class="filter-button rounded-full border px-5 py-2">Sedan executivo</button><button data-filter="interior" class="filter-button rounded-full border px-5 py-2">Interior e conforto</button>
         </div>
         <div class="grid gap-6 md:grid-cols-3">
-          <article data-category="vans" class="fleet-card overflow-hidden rounded-3xl bg-slate-50"><button
-              data-lightbox-src="assets/img/optimized/iveco-daily-ext.webp" alt="Iveco Daily"><img
-                src="assets/img/optimized/iveco-daily-ext.webp" alt="Iveco Daily 50-180"
-                class="h-52 w-full object-cover"></button>
-            <div class="p-5">
-              <h3 class="text-xl font-bold">Iveco Daily 50-180 Executiva</h3>
-              <p>5 estrelas · Ar-condicionado · DVD · Som · Tomadas · Poltronas reclináveis.</p>
-            </div>
-          </article>
-          <article data-category="vans" class="fleet-card overflow-hidden rounded-3xl bg-slate-50"><button
-              data-lightbox-src="assets/img/optimized/mercedes-sprinter-ext.webp" alt="Mercedes Sprinter"><img
-                src="assets/img/optimized/mercedes-sprinter-ext.webp" alt="Mercedes-Benz Sprinter"
-                class="h-52 w-full object-cover"></button>
-            <div class="p-5">
-              <h3 class="text-xl font-bold">Mercedes-Benz Sprinter Executiva</h3>
-              <p>Teto alto e rodado duplo, ideal para turismo e longas distâncias.</p>
-            </div>
-          </article>
-          <article data-category="vans" class="fleet-card overflow-hidden rounded-3xl bg-slate-50"><button
-              data-lightbox-src="assets/img/optimized/fiat-ducato-ext.webp" alt="Fiat Ducato"><img
-                src="assets/img/optimized/fiat-ducato-ext.webp" alt="Fiat Ducato Minibus"
-                class="h-52 w-full object-cover"></button>
-            <div class="p-5">
-              <h3 class="text-xl font-bold">Fiat Ducato Minibus Executiva</h3>
-              <p>Conforto térmico e amplo espaço interno.</p>
-            </div>
-          </article>
-          <article data-category="interior" class="fleet-card overflow-hidden rounded-3xl bg-slate-50"><button
-              data-lightbox-src="assets/img/optimized/van-interior-poltronas.webp" alt="Interior VIP"><img
-                src="assets/img/optimized/van-interior-poltronas.webp" alt="Interior executivo VIP"
-                class="h-52 w-full object-cover"></button>
-            <div class="p-5">
-              <h3 class="text-xl font-bold">Interior Executivo Padrão VIP</h3>
-              <p>Bancos em couro cinza/preto, tapete vermelho higienizado e painel moderno com PIX.</p>
-            </div>
-          </article>
-          <article data-category="executivo" class="fleet-card overflow-hidden rounded-3xl bg-slate-50"><button
-              data-lightbox-src="assets/img/optimized/corolla-executivo.webp" alt="Toyota Corolla"><img
-                src="assets/img/optimized/corolla-executivo.webp" alt="Toyota Corolla prata executivo"
-                class="h-52 w-full object-cover"></button>
-            <div class="p-5">
-              <h3 class="text-xl font-bold">Toyota Corolla Prata Executivo</h3>
-              <p>Transfer VIP corporativo e receptivo em aeroportos de Tocantins e Maranhão.</p>
-            </div>
-          </article>
+          <article data-category="vans" class="fleet-card overflow-hidden rounded-3xl bg-slate-50"><button data-lightbox-src="assets/img/optimized/iveco-daily-ext.webp" aria-label="Ampliar foto da Iveco Daily"><img src="assets/img/optimized/iveco-daily-ext.webp" alt="Van Iveco Daily 50-180" class="h-52 w-full object-cover"></button><div class="p-5"><h3 class="text-xl font-bold">Iveco Daily 50-180 Executiva</h3><p>5 estrelas, ar-condicionado, DVD, som, tomadas e poltronas reclináveis.</p></div></article>
+          <article data-category="vans" class="fleet-card overflow-hidden rounded-3xl bg-slate-50"><button data-lightbox-src="assets/img/optimized/mercedes-sprinter-ext.webp" aria-label="Ampliar foto da Mercedes-Benz Sprinter"><img src="assets/img/optimized/mercedes-sprinter-ext.webp" alt="Mercedes-Benz Sprinter executiva" class="h-52 w-full object-cover"></button><div class="p-5"><h3 class="text-xl font-bold">Mercedes-Benz Sprinter Executiva</h3><p>Teto alto e rodado duplo, ideal para turismo e longas distâncias.</p></div></article>
+          <article data-category="vans" class="fleet-card overflow-hidden rounded-3xl bg-slate-50"><button data-lightbox-src="assets/img/optimized/fiat-ducato-ext.webp" aria-label="Ampliar foto da Fiat Ducato"><img src="assets/img/optimized/fiat-ducato-ext.webp" alt="Fiat Ducato Minibus executiva" class="h-52 w-full object-cover"></button><div class="p-5"><h3 class="text-xl font-bold">Fiat Ducato Minibus Executiva</h3><p>Conforto térmico e amplo espaço interno.</p></div></article>
+          <article data-category="interior" class="fleet-card overflow-hidden rounded-3xl bg-slate-50"><button data-lightbox-src="assets/img/optimized/van-interior-poltronas.webp" aria-label="Ampliar foto do interior VIP"><img src="assets/img/optimized/van-interior-poltronas.webp" alt="Interior executivo VIP" class="h-52 w-full object-cover"></button><div class="p-5"><h3 class="text-xl font-bold">Interior Executivo Padrão VIP</h3><p>Bancos em couro cinza e preto, tapete vermelho higienizado e painel moderno.</p></div></article>
+          <article data-category="executivo" class="fleet-card overflow-hidden rounded-3xl bg-slate-50"><button data-lightbox-src="assets/img/optimized/corolla-executivo.webp" aria-label="Ampliar foto do Toyota Corolla"><img src="assets/img/optimized/corolla-executivo.webp" alt="Toyota Corolla prata executivo" class="h-52 w-full object-cover"></button><div class="p-5"><h3 class="text-xl font-bold">Toyota Corolla Prata Executivo</h3><p>Transfer VIP corporativo e receptivo em aeroportos.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section id="diferenciais" class="differentials-section px-5 py-16 text-center">
-      <h2 class="text-3xl font-black">Atendimento humano e frota cuidada</h2>
-      <p class="mx-auto mt-3 max-w-2xl">Compromisso com segurança, clareza no orçamento e experiência
-        confortável do embarque ao destino.</p>
+    <section id="homenagem" class="legacy-section px-5 py-20 text-white">
+      <div class="mx-auto max-w-7xl">
+        <img src="assets/img/optimized/logo-ary-silver.webp" alt="ARY Transportes e Viagens" class="mb-10 h-20 w-auto">
+        <div class="grid items-center gap-10 md:grid-cols-2">
+          <figure class="memorial-frame"><img src="assets/img/optimized/fundador-sr-ary.webp" alt="Sr. Ary sorrindo ao lado de uma van da empresa"><figcaption>Sr. Ary ao lado de um dos veículos da frota — O início de um grande propósito</figcaption></figure>
+          <div class="legacy-copy"><h2 class="mb-6 text-4xl font-black">Legado &amp; Homenagem ao Fundador — Sr. Ary</h2><p>🤍 Dedicamos este momento a quem foi o início de tudo. Àquele que sonhou, acreditou e deu o primeiro passo para construir esta história que hoje seguimos com tanto orgulho.</p><p>O seu legado está presente em cada detalhe, em cada serviço realizado, em cada cliente atendido e em cada quilômetro percorrido. Não é apenas uma empresa: é a continuidade de um propósito que começou com você.</p><p>Mais do que um fundador, uma inspiração diária. Alguém que deixou valores, ensinamentos e um caminho que seguimos com respeito, responsabilidade e dedicação. 🚐✨</p><p>Seguimos em frente, honrando a sua história e mantendo vivo tudo aquilo que você construiu.</p><p>Você sempre será parte essencial da nossa trajetória. Jamais será esquecido. 🤍</p><div id="historia-complementar-sr-ary" class="hidden"></div></div>
+        </div>
+      </div>
     </section>
 
     <section id="orcamento" class="light-section mx-auto max-w-3xl px-5 py-20">
-      <h2 class="mb-3 text-4xl font-black text-ary-primary">Simulador de Orçamento Rápido via WhatsApp</h2>
+      <h2 class="mb-3 text-4xl font-black text-ary-primary">Solicite seu orçamento</h2>
+      <p class="mb-6">Envie os dados da sua viagem e fale diretamente com a ARY pelo WhatsApp.</p>
       <form id="form-orcamento-ary" class="grid gap-4 rounded-3xl bg-white p-6 shadow-xl">
-        <label>Modalidade<select id="servico" name="servico" required class="mt-1 w-full rounded-lg border p-3">
-            <option>Transporte Executivo &amp; Receptivo de Aeroportos</option>
-            <option>Transporte Escolar</option>
-            <option>Fretamento de Vans &amp; Viagens (TO e MA)</option>
-          </select></label>
+        <label>Modalidade<select id="servico" name="servico" required class="mt-1 w-full rounded-lg border p-3"><option>Transporte Executivo</option><option>Traslado para Aeroportos</option><option>Transporte para Eventos</option><option>Transporte Corporativo</option><option>Viagens Particulares e Excursões</option><option>Atendimento a Artistas e Equipes de Eventos</option><option>Transporte para Feiras e Exposições</option><option>Transporte Escolar</option></select></label>
         <label>Nome<input name="nome" required maxlength="120" class="mt-1 w-full rounded-lg border p-3"></label>
-        <label>Origem/Destino ou Escola/Bairro<input name="rota" required maxlength="120"
-            class="mt-1 w-full rounded-lg border p-3"></label>
-        <label>Data/Período<input name="data" required maxlength="60" class="mt-1 w-full rounded-lg border p-3"
-            placeholder="Ex.: 15/12, período integral"></label>
-        <label>Nº de Passageiros<input name="passageiros" type="number" min="1" max="120" required
-            class="mt-1 w-full rounded-lg border p-3"></label>
-        <label>Observações<textarea name="observacoes" maxlength="160"
-            class="mt-1 w-full rounded-lg border p-3"></textarea></label>
-        <label>Canal de atendimento<select name="telefone" required class="mt-1 w-full rounded-lg border p-3">
-            <option value="5563992935934">Unidade 1: (63) 99293-5934</option>
-            <option value="5563992930031">Unidade 2: (63) 99293-0031</option>
-          </select></label>
-        <button class="rounded-full bg-ary-accent px-6 py-4 font-black text-ary-primary" type="submit">Enviar orçamento
-          no WhatsApp</button>
+        <label>Origem e destino<input name="rota" required maxlength="120" class="mt-1 w-full rounded-lg border p-3"></label>
+        <label>Data ou período<input name="data" required maxlength="60" class="mt-1 w-full rounded-lg border p-3" placeholder="Ex.: 15/12, período integral"></label>
+        <label>Número de passageiros<input name="passageiros" type="number" min="1" max="120" required class="mt-1 w-full rounded-lg border p-3"></label>
+        <label>Observações<textarea name="observacoes" maxlength="160" class="mt-1 w-full rounded-lg border p-3"></textarea></label>
+        <label>Canal de atendimento<select name="telefone" required class="mt-1 w-full rounded-lg border p-3"><option value="5563992935934">WhatsApp: (63) 99293-5934</option><option value="5563992342641">WhatsApp: (63) 99234-2641</option></select></label>
+        <button class="rounded-full bg-ary-accent px-6 py-4 font-black text-ary-primary" type="submit">Enviar orçamento no WhatsApp</button>
       </form>
     </section>
   </main>
 
-  <footer class="bg-ary-primary px-5 py-10 text-white">
-    <div class="mx-auto flex max-w-7xl flex-col gap-3 md:flex-row md:justify-between">
-      <div><strong>ARY Transportes e Viagens</strong>
-        <p>Região do Tocantins e Maranhão - Brasil</p>
-      </div>
-      <div><a href="tel:+5563992935934">(63) 99293-5934</a> · <a href="tel:+5563992930031">(63) 99293-0031</a>
-        <p><a href="https://www.instagram.com/_arytransporte/" rel="noopener noreferrer">@_arytransporte</a></p>
-      </div>
-      <p class="text-sm text-slate-300">Privacidade e segurança são prioridades.</p>
+  <footer class="site-footer px-5 py-12 text-white">
+    <div class="mx-auto grid max-w-7xl gap-8 md:grid-cols-3">
+      <div><img src="assets/img/optimized/logo-ary-dark-bg.webp" alt="ARY Transportes e Viagens" class="mb-4 h-20 w-auto"><p>Levando você ao destino com segurança, conforto e confiança.</p></div>
+      <div><strong>Contatos</strong><p><a href="https://wa.me/5563992935934" target="_blank" rel="noopener noreferrer">WhatsApp: (63) 99293-5934</a></p><p><a href="https://wa.me/5563992342641" target="_blank" rel="noopener noreferrer">WhatsApp: (63) 99234-2641</a></p><p><a href="mailto:arytransporteseviagens@gmail.com">arytransporteseviagens@gmail.com</a></p></div>
+      <div><strong>Atendimento</strong><p><a href="https://www.instagram.com/_arytransporte/" target="_blank" rel="noopener noreferrer">@_arytransporte</a></p><p>Araguaína — Tocantins — Brasil</p><p>Atendimento em todo o território nacional.</p></div>
     </div>
-    <p class="mx-auto mt-6 max-w-7xl text-sm text-slate-300">© <span data-current-year></span> ARY Transportes e Viagens
-    </p>
+    <p class="mx-auto mt-8 max-w-7xl text-sm text-slate-300">© <span data-current-year></span> ARY Transportes e Viagens</p>
   </footer>
+
   <div class="whatsapp-contact fixed bottom-6 right-6 z-30">
-    <div id="whatsapp-options" class="whatsapp-options" data-whatsapp-options hidden>
-      <a href="https://wa.me/5563992935934" target="_blank" rel="noopener noreferrer">Unidade 1<br><small>(63) 99293-5934</small></a>
-      <a href="https://wa.me/5563992930031" target="_blank" rel="noopener noreferrer">Unidade 2<br><small>(63) 99293-0031</small></a>
-    </div>
-    <div class="whatsapp-actions">
-      <a class="whatsapp-float" href="https://wa.me/5563992935934" target="_blank" rel="noopener noreferrer"
-        aria-label="Abrir conversa no WhatsApp principal">
-        <svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .4 5.2.4 11.7c0 2.1.6 4.1 1.6 5.8L.3 24l6.7-1.7a11.8 11.8 0 0 0 5.1 1.2h.1c6.4 0 11.6-5.2 11.6-11.7 0-3.1-1.2-6.1-3.3-8.3Zm-8.4 18c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-4 .9 1-3.9-.2-.3a9.7 9.7 0 1 1 8.2 4.8Zm5.3-7.3c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.4-3.8-3.2-.3-.5.3-.5.8-1.6.1-.2.1-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.7 5.8 5.1 2.2.9 2.7.7 3.2.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4Z"/>
-        </svg>
-        <span>WhatsApp</span>
-      </a>
-      <button type="button" class="whatsapp-choice" data-whatsapp-toggle aria-expanded="false"
-        aria-controls="whatsapp-options" aria-label="Escolher outro número de WhatsApp">+</button>
+    <div id="whatsapp-options" class="whatsapp-options" data-whatsapp-options hidden><a href="https://wa.me/5563992935934" target="_blank" rel="noopener noreferrer">WhatsApp 1<br><small>(63) 99293-5934</small></a><a href="https://wa.me/5563992342641" target="_blank" rel="noopener noreferrer">WhatsApp 2<br><small>(63) 99234-2641</small></a></div>
+    <div class="whatsapp-actions"><a class="whatsapp-float" href="https://wa.me/5563992935934" target="_blank" rel="noopener noreferrer" aria-label="Abrir conversa no WhatsApp principal"><span class="whatsapp-icon" aria-hidden="true">◉</span><span>WhatsApp</span></a><button type="button" class="whatsapp-choice" data-whatsapp-toggle aria-expanded="false" aria-controls="whatsapp-options" aria-label="Escolher outro número de WhatsApp">+</button></div>
+  </div>
+  <div data-lightbox hidden class="modal-backdrop fixed inset-0 z-50 grid place-items-center p-5" role="dialog" aria-modal="true" aria-label="Galeria ampliada">
+    <button data-lightbox-close type="button" class="absolute right-6 top-5 z-10 text-3xl text-white" aria-label="Fechar imagem ampliada">×</button>
+    <div class="lightbox-panel">
+      <img src="" alt="" class="lightbox-image max-h-[85vh] max-w-full rounded-2xl">
     </div>
   </div>
-  <!--<div data-lightbox hidden class="modal-backdrop fixed inset-0 z-50 grid place-items-center p-5"><button data-lightbox-close class="absolute right-6 top-5 text-3xl text-white" aria-label="Fechar">×</button><img src="" alt="" class="max-h-[85vh] max-w-full rounded-2xl"></div>-->
   <script src="assets/js/security.js"></script>
-  <script src="assets/js/app.js"></script>
   <script src="assets/js/whatsapp-tracking.js"></script>
+  <script src="assets/js/excursoes.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/live-reload.js"></script>
 </body>
 
 </html>

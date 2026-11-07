@@ -48,8 +48,10 @@
     document.querySelectorAll('[data-lightbox-src]').forEach(function (trigger) {
       trigger.addEventListener('click', function () {
         if (!modal || !modalImage) return;
-        modalImage.src = trigger.getAttribute('data-lightbox-src');
-        modalImage.alt = trigger.getAttribute('alt') || 'Imagem ampliada da frota';
+        var source = window.ARYSecurity.sanitizeAssetUrl(trigger.getAttribute('data-lightbox-src') || '');
+        if (!source) return;
+        modalImage.src = source;
+        modalImage.alt = window.ARYSecurity.sanitizeText(trigger.getAttribute('alt') || 'Imagem ampliada da frota', 160);
         modal.hidden = false;
         if (modalImage.focus) modalImage.focus();
       });
@@ -58,6 +60,9 @@
       modal.addEventListener('click', function (event) {
         if (event.target === modal || event.target.hasAttribute('data-lightbox-close')) closeModal();
       });
+    }
+    if (modalImage) {
+      modalImage.addEventListener('error', closeModal);
     }
     document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') closeModal();

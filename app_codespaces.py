@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Servidor HTTP Blindado — ARY Transportes e Viagens
+Servidor HTTP Blindado com Live-Reload Nativo — ARY Transportes e Viagens
 Compatível com Windows (py -3), GitHub Codespaces (Porta 8080 Public) e Render ($PORT).
-Injeta cabeçalhos HTTP de segurança estritos e expõe /healthz e /api/status.
+Expõe /healthz, /api/status e /__mtime (para atualização em tempo real no localhost).
 """
 import http.server
 import json
@@ -28,9 +28,36 @@ CSP_POLICY = (
 )
 
 
+def get_latest_mtime(directory: Path) -> float:
+    latest = 0.0
+    if not directory.exists():
+        return latest
+    for root, _, files in os.walk(directory):
+        for fname in files:
+            if fname.endswith((".html", ".css", ".js", ".json", ".webp")):
+                try:
+                    mtime = os.path.getmtime(os.path.join(root, fname))
+                    if mtime > latest:
+                        latest = mtime
+                except OSError:
+                    pass
+    return latest
+
+
 class HardenedARYHandler(http.server.SimpleHTTPRequestHandler):
+    extensions_map = {
+        **http.server.SimpleHTTPRequestHandler.extensions_map,
+        ".webp": "image/webp",
+        ".json": "application/json",
+    }
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(SRC_DIR), **kwargs)
+
+    def log_message(self, format, *args):
+        if self.path and self.path.startswith("/__mtime"):
+            return
+        super().log_message(format, *args)
 
     def end_headers(self):
         self.send_header("X-Frame-Options", "DENY")
@@ -43,17 +70,27 @@ class HardenedARYHandler(http.server.SimpleHTTPRequestHandler):
         self.send_header("X-XSS-Protection", "1; mode=block")
         self.send_header("Strict-Transport-Security", "max-age=31536000; includeSubDomains")
         self.send_header("Content-Security-Policy", CSP_POLICY)
-        self.send_header("Cache-Control", "no-cache, must-revalidate")
+        self.send_header("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0")
         super().end_headers()
 
     def do_GET(self):
-        if self.path in ("/healthz", "/api/status"):
+        clean_path = self.path.split("?")[0]
+        if clean_path == "/__mtime":
+            payload = json.dumps({"mtime": get_latest_mtime(SRC_DIR)}).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(payload)))
+            self.end_headers()
+            self.wfile.write(payload)
+            return
+
+        if clean_path in ("/healthz", "/api/status"):
             payload = json.dumps(
                 {
                     "status": "ok",
                     "project": "ary-transportes-web",
-                    "client": "ARY Transportes e Viagens (Todo o Território do Tocantins e Maranhão)",
-                    "security": "CSP + HSTS + XFO + NoSniff active",
+                    "live_reload": True,
+                    "security": "CSP + HSTS + XFO + NoSniff enforced",
                     "timestamp": datetime.now(timezone.utc).isoformat(),
                 },
                 ensure_ascii=False,
@@ -75,8 +112,8 @@ class ThreadingHTTPServer(socketserver.ThreadingMixIn, http.server.HTTPServer):
 def main():
     os.makedirs(SRC_DIR, exist_ok=True)
     with ThreadingHTTPServer(("0.0.0.0", PORT), HardenedARYHandler) as httpd:
-        print(f"[ARY-SERVER] Online em http://0.0.0.0:{PORT}")
-        print(f"[ARY-SERVER] Healthcheck em http://0.0.0.0:{PORT}/healthz")
+        print(f"[ARY-LIVE-SERVER] Online em http://localhost:{PORT}")
+        print(f"[ARY-LIVE-SERVER] Live-Reload ativo em http://localhost:{PORT}/__mtime")
         try:
             httpd.serve_forever()
         except KeyboardInterrupt:

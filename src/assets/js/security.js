@@ -4,6 +4,8 @@
   var allowedUrls = [
     'https://wa.me/5563992935934',
     'https://wa.me/5563992930031',
+    'https://wa.me/5563992342641',
+    'mailto:arytransporteseviagens@gmail.com',
     'https://www.instagram.com/_arytransporte/'
   ];
 
@@ -29,14 +31,20 @@
     }) ? value : '';
   }
 
+  function sanitizeAssetUrl(url) {
+    var value = typeof url === 'string' ? url.trim() : '';
+    return /^assets\/img\/optimized\/[a-z0-9._-]+\.webp$/i.test(value) ? value : '';
+  }
+
   function validatePhone(phone) {
-    return phone === '5563992935934' || phone === '5563992930031'
+    return phone === '5563992935934' || phone === '5563992930031' || phone === '5563992342641'
       ? phone
       : '5563992935934';
   }
 
   function buildWhatsAppUrl(phoneKey, payload) {
-    var phone = phoneKey === 'secundario' ? '5563992930031' : '5563992935934';
+    var phone = phoneKey === 'secundario' ? '5563992342641'
+      : phoneKey === 'terceiro' ? '5563992930031' : '5563992935934';
     var data = payload || {};
     var fields = {
       nome: sanitizeText(data.nome || 'Cliente via Site', 60),
@@ -64,11 +72,13 @@
   window.ARYSecurity = Object.freeze({
     sanitizeText: sanitizeText,
     sanitizeUrl: sanitizeUrl,
+    sanitizeAssetUrl: sanitizeAssetUrl,
     validatePhone: validatePhone,
     buildWhatsAppUrl: buildWhatsAppUrl,
     buildSafeWhatsAppUrl: function (phone, fields) {
       return buildWhatsAppUrl(
-        phone === '5563992930031' ? 'secundario' : 'principal',
+        phone === '5563992342641' ? 'secundario'
+          : phone === '5563992930031' ? 'terceiro' : 'principal',
         fields
       );
     }

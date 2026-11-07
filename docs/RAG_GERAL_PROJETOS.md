@@ -4,7 +4,8 @@
 
 - Nome: ARY Transportes e Viagens
 - Abrangência oficial: Todo o Território do Tocantins e Maranhão (TO / MA)
-- WhatsApp: `(63) 99293-5934` e `(63) 99293-0031`
+- WhatsApp: `(63) 99293-5934` e `(63) 99234-2641`
+- E-mail: `arytransporteseviagens@gmail.com`
 - Instagram: `@_arytransporte`
 
 ## Arquitetura consolidada
@@ -28,6 +29,19 @@
 - ISSUE-12: preview público e sincronização da apresentação.
 - ISSUE-15: limpeza cirúrgica do Hero e navbar.
 - ISSUE-16: atualização do estado, auditoria e base RAG.
+- ISSUE-29: live-reload local por `/__mtime`, com headers de segurança preservados.
+- ISSUE-30: processamento do kit oficial de design e da foto memorial do Sr. Ary.
+- ISSUE-31: whitelist do novo WhatsApp/e-mail e motor dinâmico de excursões com ocultação de pacotes expirados.
+- ISSUE-32: revisão integral da interface, apresentação institucional, oito serviços, homenagem, frota e rodapé comercial.
+- ISSUE-36: refinamento do lightbox sem quadro branco.
+- ISSUE-37: remoção do cursor de edição em textos visuais, com formulários preservados.
+- ISSUE-38: remoção do filtro azul e correção do estado oculto do lightbox.
+
+## Épico 18 — Publicação Oficial / Go-Live
+
+- ISSUE-36 a ISSUE-38: **CONCLUÍDAS** e aprovadas visualmente em `http://localhost:8080`.
+- ISSUE-39: auditoria final de segurança e estrutura concluída.
+- ISSUE-40: publicação oficial pendente de `git add`, `git commit` e `git push` pelo responsável fora desta sessão.
 
 ## Regras de continuidade
 

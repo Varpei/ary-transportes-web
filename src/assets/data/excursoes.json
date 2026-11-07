@@ -1,0 +1,28 @@
+{
+  "config": {
+    "autoHideExpired": true,
+    "whatsappPhone": "5563992935934",
+    "historiaComplementarSrAry": ""
+  },
+  "pacotes": [
+    {
+      "id": "bate-volta-carolina-chapada-das-mesas",
+      "ativo": true,
+      "tipo": "Bate e Volta Especial",
+      "titulo": "Carolina – MA (Chapada das Mesas)",
+      "descricao": "Viva um dia inesquecível nas belezas naturais da Chapada das Mesas com toda a segurança, climatização e conforto das nossas vans executivas.",
+      "saida": "Saída de Araguaína – TO e região",
+      "dataTexto": "Próxima saída programada — consulte a data e as vagas",
+      "expiresAt": "2026-12-31",
+      "vagas": "Vagas limitadas",
+      "itensInclusos": [
+        "Transporte em van executiva climatizada",
+        "Bancos executivos reclináveis e higienizados",
+        "Motorista profissional qualificado",
+        "Segurança e pontualidade do embarque ao retorno"
+      ],
+      "imagem": "assets/img/optimized/sprinter-turismo-pousada.webp",
+      "mensagemWhatsapp": "Olá, ARY Transportes! Vi no site o bate e volta para Carolina - MA (Chapada das Mesas) e gostaria de consultar a data da próxima saída, os valores e a disponibilidade de vagas."
+    }
+  ]
+}

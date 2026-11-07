@@ -7,7 +7,23 @@
 }
 
 html { scroll-behavior: smooth; }
-body { background: var(--ary-light); color: #17323a; }
+/* Previne seleção acidental e cursor (caret) piscando em elementos visuais */
+body {
+  background: var(--ary-light);
+  color: #17323a;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+  caret-color: transparent !important;
+}
+
+/* Mantém digitação perfeitamente normal e cursor ativo no formulário */
+input,
+textarea,
+select {
+  -webkit-user-select: text !important;
+  user-select: text !important;
+  caret-color: auto !important;
+}
 .site-header { background: rgba(248, 250, 252, .96); backdrop-filter: blur(14px); }
 .site-header nav a { color: var(--ary-primary-dark); }
 .site-header nav a:hover { color: var(--ary-accent-hover); }
@@ -32,6 +48,22 @@ body { background: var(--ary-light); color: #17323a; }
 .differentials-section h2,
 .differentials-section p { color: var(--ary-primary-dark); }
 .differentials-section { background: var(--ary-light); }
+.service-card { color: var(--ary-primary-dark); }
+.service-card h3 { margin-bottom: .75rem; color: var(--ary-primary); font-size: 1.25rem; font-weight: 800; }
+.service-card p { min-height: 3.5rem; margin-bottom: 1.25rem; }
+.service-card button { border-radius: 9999px; background: var(--ary-primary); color: #FFFFFF; padding: .65rem 1rem; font-weight: 700; }
+.service-card button:hover { background: var(--ary-primary-dark); }
+.fleet-pillar { border-left: 4px solid var(--ary-accent); border-radius: .75rem; background: #F8FAFC; padding: 1rem; color: var(--ary-primary); font-weight: 800; }
+.legacy-section { position: relative; overflow: hidden; background: linear-gradient(135deg, #0B1922, #152C38); }
+.legacy-section::after { position: absolute; inset: 0; background: url("../img/optimized/logo-ary-graphite.webp") center / 45% auto no-repeat; content: ""; opacity: .08; pointer-events: none; }
+.legacy-section > div { position: relative; z-index: 1; }
+.memorial-frame { border: 1px solid #CBD5E1; border-radius: 1.5rem; background: #0B1922; padding: .75rem; box-shadow: 0 16px 40px rgba(0, 0, 0, .35); }
+.memorial-frame img { width: 100%; max-height: 32rem; border-radius: 1rem; object-fit: cover; }
+.memorial-frame figcaption { padding: .9rem .35rem .2rem; color: #CBD5E1; font-style: italic; }
+.legacy-copy p { margin-bottom: 1rem; color: #E8F0F2; }
+.legacy-copy #historia-complementar-sr-ary:not(.hidden) { border-top: 1px solid #54717C; padding-top: 1rem; }
+.site-footer { border-left: 8px solid var(--ary-accent); background: linear-gradient(90deg, rgba(27, 73, 86, .98), rgba(27, 73, 86, .9)), url("../img/optimized/bg-rodape-van.webp") center / cover; }
+.site-footer a:hover { color: var(--ary-accent); }
 .whatsapp-contact { display: flex; flex-direction: column; align-items: flex-end; gap: .6rem; }
 .whatsapp-actions { display: flex; align-items: center; gap: .35rem; }
 .whatsapp-float {
@@ -59,7 +91,10 @@ body { background: var(--ary-light); color: #17323a; }
 .whatsapp-options small { font-weight: 500; }
 .filter-button.is-active { background: var(--ary-primary); color: white; }
 .fleet-badge { display: inline-block; border-radius: 9999px; background: var(--ary-accent); color: var(--ary-primary-dark); padding: .25rem .6rem; font-size: .75rem; font-weight: 800; }
-.modal-backdrop { background: rgba(15, 45, 55, .82); }
+[data-lightbox][hidden] { display: none !important; }
+.modal-backdrop { background: transparent; }
+.lightbox-panel { position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; max-width: 92vw; max-height: 88vh; }
+.lightbox-image { display: block; width: auto; height: auto; max-width: 92vw; max-height: 88vh; object-fit: contain; box-shadow: 0 24px 70px rgba(0, 0, 0, .45); }
 @keyframes pulse { 0%, 100% { opacity: .8; transform: scale(1); } 50% { opacity: 0; transform: scale(1.18); } }
 @media (max-width: 767px) {
   .site-header nav.is-open { display: flex; }

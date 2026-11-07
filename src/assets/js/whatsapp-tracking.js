@@ -24,7 +24,8 @@
       form.addEventListener('submit', function (event) {
         event.preventDefault();
         var data = new FormData(form);
-        var phoneKey = data.get('telefone') === '5563992930031' ? 'secundario' : 'principal';
+        var phoneKey = data.get('telefone') === '5563992342641' ? 'secundario'
+          : data.get('telefone') === '5563992930031' ? 'terceiro' : 'principal';
         var safeUrl = window.ARYSecurity.buildWhatsAppUrl(phoneKey, {
           nome: data.get('nome'),
           servico: data.get('servico'),

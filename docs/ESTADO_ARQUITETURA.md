@@ -63,6 +63,19 @@ As decisões devem permanecer compatíveis com HTML5 semântico, Tailwind CSS vi
 - ISSUE-14: CONCLUÍDO — atualização automática da governança e base RAG.
 - ISSUE-15: CONCLUÍDO — simplificação do H1, remoção do subtítulo repetido e limpeza da navbar.
 - ISSUE-16: CONCLUÍDO — atualização do estado, auditoria e base RAG do Épico 9.
+- ISSUE-29: CONCLUÍDO — servidor local com rota `/__mtime`, cabeçalhos de segurança preservados e atualização automática no navegador.
+- ISSUE-30: CONCLUÍDO — kit oficial de design e foto do Sr. Ary processados para WebP otimizado.
+- ISSUE-31: CONCLUÍDO — novo contato WhatsApp, e-mail autorizado e motor de excursões com expiração automática.
+- ISSUE-32: CONCLUÍDO — página integral revisada em português, com apresentação, serviços, homenagem, frota e proposta de contato.
+- ISSUE-36: CONCLUÍDO — refinamento do lightbox sem quadro branco.
+- ISSUE-37: CONCLUÍDO — remoção do cursor de edição em textos visuais, preservando os campos de formulário.
+- ISSUE-38: CONCLUÍDO — remoção do filtro azul do lightbox e correção da camada oculta.
+
+## Épico 18 — Publicação Oficial / Go-Live
+
+- ISSUE-36 a ISSUE-38: **CONCLUÍDAS** — correções visuais aprovadas no ambiente local `http://localhost:8080`.
+- ISSUE-39: auditoria final de segurança e estrutura registrada.
+- ISSUE-40: deploy oficial aguardando execução manual do responsável, pois o `git push` está bloqueado nesta sessão.
 
 ## Última auditoria
 
