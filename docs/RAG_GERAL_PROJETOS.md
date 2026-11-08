@@ -42,6 +42,13 @@
 - ISSUE-36 a ISSUE-38: **CONCLUÍDAS** e aprovadas visualmente em `http://localhost:8080`.
 - ISSUE-39: auditoria final de segurança e estrutura concluída.
 - ISSUE-40: publicação oficial pendente de `git add`, `git commit` e `git push` pelo responsável fora desta sessão.
+- ISSUE-41: menu hambúrguer mobile-first com navegação sem encavalamento.
+- ISSUE-42: homenagem ao Sr. Ary movida fisicamente para depois do Hero.
+- ISSUE-43: documentação e validação local do Épico 19 concluídas.
+
+## Épico 19 — Correção Mobile-First e Reposicionamento da Homenagem
+
+- ISSUE-41 a ISSUE-43: **CONCLUÍDAS** — menu responsivo e memorial do Sr. Ary no topo da página.
 
 ## Regras de continuidade
 

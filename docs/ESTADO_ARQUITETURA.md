@@ -76,6 +76,13 @@ As decisões devem permanecer compatíveis com HTML5 semântico, Tailwind CSS vi
 - ISSUE-36 a ISSUE-38: **CONCLUÍDAS** — correções visuais aprovadas no ambiente local `http://localhost:8080`.
 - ISSUE-39: auditoria final de segurança e estrutura registrada.
 - ISSUE-40: deploy oficial aguardando execução manual do responsável, pois o `git push` está bloqueado nesta sessão.
+- ISSUE-41: CONCLUÍDO — menu hambúrguer mobile-first com links organizados e layout desktop preservado.
+- ISSUE-42: CONCLUÍDO — homenagem ao Sr. Ary reposicionada imediatamente após o Hero.
+- ISSUE-43: CONCLUÍDO — validação local e persistência documental do Épico 19.
+
+## Épico 19 — Correção Mobile-First e Reposicionamento da Homenagem
+
+- ISSUE-41 a ISSUE-43: **CONCLUÍDAS** — menu responsivo e homenagem posicionada no topo para validação visual local.
 
 ## Última auditoria
 

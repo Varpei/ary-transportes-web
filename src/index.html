@@ -17,21 +17,35 @@
   <header class="site-header fixed inset-x-0 top-0 z-40 border-b border-slate-200">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3">
       <a href="#" aria-label="ARY Transportes e Viagens"><img src="assets/img/optimized/logo-ary-dark-bg.webp" alt="ARY Transportes e Viagens" class="brand-logo h-16 w-auto"></a>
-      <button data-menu-toggle aria-expanded="false" aria-controls="main-nav" class="rounded-lg p-2 text-ary-primary md:hidden" aria-label="Abrir menu">☰</button>
-      <nav id="main-nav" data-mobile-menu class="hidden items-center gap-5 md:flex">
-        <a href="#sobre" class="font-semibold hover:text-ary-primary">A Empresa (+20 Anos)</a>
-        <a href="#servicos" class="font-semibold hover:text-ary-primary">Serviços</a>
-        <a href="#excursoes" class="font-semibold hover:text-ary-primary">Excursões</a>
-        <a href="#frota" class="font-semibold hover:text-ary-primary">Nossa Frota</a>
-        <a href="#homenagem" class="font-semibold hover:text-ary-primary">Legado Sr. Ary</a>
-        <a href="#orcamento" class="font-semibold hover:text-ary-primary">Orçamento Rápido</a>
-        <a href="https://www.instagram.com/_arytransporte/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <button id="mobile-menu-btn" data-menu-toggle aria-expanded="false" aria-controls="main-nav" class="flex items-center justify-center p-2 text-slate-800 hover:text-emerald-600 focus:outline-none md:hidden" aria-label="Abrir menu">
+        <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+      </button>
+      <nav id="main-nav" aria-label="Navegação principal">
+        <ul data-mobile-menu class="hidden flex-col gap-4 md:flex md:flex-row md:items-center md:gap-5">
+          <li><a href="#sobre" class="font-semibold hover:text-ary-primary">A Empresa (+20 Anos)</a></li>
+          <li><a href="#servicos" class="font-semibold hover:text-ary-primary">Serviços</a></li>
+          <li><a href="#excursoes" class="font-semibold hover:text-ary-primary">Excursões</a></li>
+          <li><a href="#frota" class="font-semibold hover:text-ary-primary">Nossa Frota</a></li>
+          <li><a href="#homenagem" class="font-semibold hover:text-ary-primary">Legado Sr. Ary</a></li>
+          <li><a href="#orcamento" class="font-semibold hover:text-ary-primary">Orçamento Rápido</a></li>
+          <li><a href="https://www.instagram.com/_arytransporte/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero-section px-5 pb-20 pt-36">
+    <section id="homenagem" class="legacy-section px-5 pb-20 pt-32 text-white md:pt-36">
+      <div class="mx-auto max-w-7xl">
+        <img src="assets/img/optimized/logo-sr-ary.webp" alt="Logo ARY Transportes e Turismo com o rosto do Sr. Ary" class="mb-10 h-32 w-auto md:h-40">
+        <div class="grid items-center gap-10 md:grid-cols-2">
+          <figure class="memorial-frame"><img src="assets/img/optimized/fundador-sr-ary.webp" alt="Sr. Ary sorrindo ao lado de uma van da empresa"><figcaption>Sr. Ary ao lado de um dos veículos da frota — O início de um grande propósito</figcaption></figure>
+          <div class="legacy-copy"><h2 class="mb-6 text-4xl font-black">Legado &amp; Homenagem ao Fundador — Sr. Ary</h2><p>🤍 Dedicamos este momento a quem foi o início de tudo. Àquele que sonhou, acreditou e deu o primeiro passo para construir esta história que hoje seguimos com tanto orgulho.</p><p>O seu legado está presente em cada detalhe, em cada serviço realizado, em cada cliente atendido e em cada quilômetro percorrido. Não é apenas uma empresa: é a continuidade de um propósito que começou com você.</p><p>Mais do que um fundador, uma inspiração diária. Alguém que deixou valores, ensinamentos e um caminho que seguimos com respeito, responsabilidade e dedicação. 🚐✨</p><p>Seguimos em frente, honrando a sua história e mantendo vivo tudo aquilo que você construiu.</p><p>Você sempre será parte essencial da nossa trajetória. Jamais será esquecido. 🤍</p><div id="historia-complementar-sr-ary" class="hidden"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hero" class="hero-section px-5 pb-20 pt-36">
       <div class="mx-auto grid max-w-7xl items-center gap-10 md:grid-cols-2">
         <div>
           <p class="hero-eyebrow mb-4 font-bold uppercase tracking-widest">Mais de 20 anos de tradição • Atendimento em Araguaína e em todo o território nacional</p>
@@ -104,16 +118,6 @@
           <article data-category="vans" class="fleet-card overflow-hidden rounded-3xl bg-slate-50"><button data-lightbox-src="assets/img/optimized/fiat-ducato-ext.webp" aria-label="Ampliar foto da Fiat Ducato"><img src="assets/img/optimized/fiat-ducato-ext.webp" alt="Fiat Ducato Minibus executiva" class="h-52 w-full object-cover"></button><div class="p-5"><h3 class="text-xl font-bold">Fiat Ducato Minibus Executiva</h3><p>Conforto térmico e amplo espaço interno.</p></div></article>
           <article data-category="interior" class="fleet-card overflow-hidden rounded-3xl bg-slate-50"><button data-lightbox-src="assets/img/optimized/van-interior-poltronas.webp" aria-label="Ampliar foto do interior VIP"><img src="assets/img/optimized/van-interior-poltronas.webp" alt="Interior executivo VIP" class="h-52 w-full object-cover"></button><div class="p-5"><h3 class="text-xl font-bold">Interior Executivo Padrão VIP</h3><p>Bancos em couro cinza e preto, tapete vermelho higienizado e painel moderno.</p></div></article>
           <article data-category="executivo" class="fleet-card overflow-hidden rounded-3xl bg-slate-50"><button data-lightbox-src="assets/img/optimized/corolla-executivo.webp" aria-label="Ampliar foto do Toyota Corolla"><img src="assets/img/optimized/corolla-executivo.webp" alt="Toyota Corolla prata executivo" class="h-52 w-full object-cover"></button><div class="p-5"><h3 class="text-xl font-bold">Toyota Corolla Prata Executivo</h3><p>Transfer VIP corporativo e receptivo em aeroportos.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="homenagem" class="legacy-section px-5 py-20 text-white">
-      <div class="mx-auto max-w-7xl">
-        <img src="assets/img/optimized/logo-ary-silver.webp" alt="ARY Transportes e Viagens" class="mb-10 h-20 w-auto">
-        <div class="grid items-center gap-10 md:grid-cols-2">
-          <figure class="memorial-frame"><img src="assets/img/optimized/fundador-sr-ary.webp" alt="Sr. Ary sorrindo ao lado de uma van da empresa"><figcaption>Sr. Ary ao lado de um dos veículos da frota — O início de um grande propósito</figcaption></figure>
-          <div class="legacy-copy"><h2 class="mb-6 text-4xl font-black">Legado &amp; Homenagem ao Fundador — Sr. Ary</h2><p>🤍 Dedicamos este momento a quem foi o início de tudo. Àquele que sonhou, acreditou e deu o primeiro passo para construir esta história que hoje seguimos com tanto orgulho.</p><p>O seu legado está presente em cada detalhe, em cada serviço realizado, em cada cliente atendido e em cada quilômetro percorrido. Não é apenas uma empresa: é a continuidade de um propósito que começou com você.</p><p>Mais do que um fundador, uma inspiração diária. Alguém que deixou valores, ensinamentos e um caminho que seguimos com respeito, responsabilidade e dedicação. 🚐✨</p><p>Seguimos em frente, honrando a sua história e mantendo vivo tudo aquilo que você construiu.</p><p>Você sempre será parte essencial da nossa trajetória. Jamais será esquecido. 🤍</p><div id="historia-complementar-sr-ary" class="hidden"></div></div>
         </div>
       </div>
     </section>

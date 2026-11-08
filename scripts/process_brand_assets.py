@@ -72,6 +72,31 @@ def crop_whatsapp_badge(image: Image.Image) -> Image.Image:
     return cropped
 
 
+def memorial_logo_to_silver(image: Image.Image) -> Image.Image:
+    source = image.convert("RGB")
+    if source.height > 60:
+        source = source.crop((0, 30, source.width, source.height - 30))
+    mask = source.point(lambda value: 255 if value < 170 else 0)
+    bounds = mask.getbbox()
+    if bounds:
+        left, top, right, bottom = bounds
+        top = max(0, top - 12)
+        bottom = min(source.height, bottom + 12)
+        source = source.crop((left, top, right, bottom))
+    rgba = source.convert("RGBA")
+    output = []
+    for red, green, blue, _ in rgba.getdata():
+        luminance = int(0.299 * red + 0.587 * green + 0.114 * blue)
+        if luminance > 170:
+            output.append((0, 0, 0, 0))
+        else:
+            alpha = max(0, min(255, int((235 - luminance) * 2.2)))
+            output.append((218, 220, 222, alpha))
+    rgba.putdata(output)
+    bounds = rgba.getbbox()
+    return rgba.crop(bounds) if bounds else rgba
+
+
 def save_from(source, output_name, transform, **save_options):
     if source:
         with Image.open(source) as image:
@@ -110,6 +135,9 @@ def main():
         save_from(ary_source, "fundador-sr-ary.webp", enhance, quality=88)
     elif not (OPT_DIR / "fundador-sr-ary.webp").exists():
         save_from(OPT_DIR / "fiat-ducato-ext.webp", "fundador-sr-ary.webp", lambda image: image.convert("RGB"), quality=85)
+
+    memorial_logo = find_raw_file(["logo", "empresa", "rosto"]) or find_raw_file(["rosto", "ary"])
+    save_from(memorial_logo, "logo-sr-ary.webp", memorial_logo_to_silver, quality=92, lossless=True)
 
 
 if __name__ == "__main__":
