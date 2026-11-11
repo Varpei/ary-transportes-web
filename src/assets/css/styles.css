@@ -54,13 +54,15 @@ select {
 .service-card button { border-radius: 9999px; background: var(--ary-primary); color: #FFFFFF; padding: .65rem 1rem; font-weight: 700; }
 .service-card button:hover { background: var(--ary-primary-dark); }
 .fleet-pillar { border-left: 4px solid var(--ary-accent); border-radius: .75rem; background: #F8FAFC; padding: 1rem; color: var(--ary-primary); font-weight: 800; }
-.legacy-section { position: relative; overflow: hidden; background: linear-gradient(135deg, #0B1922, #152C38); }
+.legacy-section { position: relative; overflow: hidden; background: linear-gradient(135deg, #E8F0F2 0%, #F8FAFC 100%); color: var(--ary-primary-dark); }
 .legacy-section::after { position: absolute; inset: 0; background: url("../img/optimized/logo-ary-graphite.webp") center / 45% auto no-repeat; content: ""; opacity: .08; pointer-events: none; }
 .legacy-section > div { position: relative; z-index: 1; }
+.legacy-logo { filter: grayscale(1) brightness(0); }
 .memorial-frame { border: 1px solid #CBD5E1; border-radius: 1.5rem; background: #0B1922; padding: .75rem; box-shadow: 0 16px 40px rgba(0, 0, 0, .35); }
 .memorial-frame img { width: 100%; max-height: 32rem; border-radius: 1rem; object-fit: cover; }
-.memorial-frame figcaption { padding: .9rem .35rem .2rem; color: #CBD5E1; font-style: italic; }
-.legacy-copy p { margin-bottom: 1rem; color: #E8F0F2; }
+.memorial-frame figcaption { padding: .9rem .35rem .2rem; color: #DCE8EB; font-style: italic; }
+.legacy-copy h2 { color: var(--ary-primary-dark); }
+.legacy-copy p { margin-bottom: 1rem; color: var(--ary-primary-dark); }
 .legacy-copy #historia-complementar-sr-ary:not(.hidden) { border-top: 1px solid #54717C; padding-top: 1rem; }
 .site-footer { border-left: 8px solid var(--ary-accent); background: linear-gradient(90deg, rgba(27, 73, 86, .98), rgba(27, 73, 86, .9)), url("../img/optimized/bg-rodape-van.webp") center / cover; }
 .site-footer a:hover { color: var(--ary-accent); }
